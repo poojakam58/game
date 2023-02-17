@@ -1,0 +1,699 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str=prompt("Enter the string ");
+        document.write(str+"<br>");
+
+        var str1=str.split('');
+        //ascending order
+        for(var i=0; i<str1.length; i++)
+        {
+            for(j=i+1; j<str1.length; j++)
+            {
+                if(str1[i]>str1[j])
+                {
+                    var temp=str1[i];
+                    str1[i]=str1[j];
+                    str1[j]=temp;
+                }
+            }
+        }
+        document.write(str1+"<br>");
+        var maxcount=0;
+        var element=0;
+        for(var i=0; i<str1.length; i++)
+        {
+            var count=1;
+            for(var j=i+1; j<str1.length; j++)
+            {
+                if(str1[i] === str1[j])
+                {
+                    count++;
+                }
+            }
+            if(maxcount<count)
+            {
+                maxcount=count;
+                element=str1[i];
+            }
+        }
+        document.write(element+"------->"+maxcount);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width={device-width}, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var limit=parseInt(prompt("Enter the limit "));
+
+        document.write("All Even no's are <br>");
+        for(var i=1; i<=limit; i++)
+        {
+            if(i%2==0)
+            {
+                document.write(+i+"<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+**************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var limit=parseInt(prompt("Enter the limit "));
+
+        document.write("all odd number <br>");
+        for(var i=1; i<=limit; i++)
+        {
+            if(i%2!=0)
+            {
+                document.write(+i+"<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+**************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script>
+        var a=10;
+        var b=20;
+        var sum=a+b;
+        document.write("Sum of two no is "+sum+"<br>");
+    </script> -->
+    <script>
+        var a=parseInt(prompt("Enter the 1st number"));
+        var b=parseInt(prompt("Enter the 2nd number"));
+
+        var sum=a+b;
+
+        document.write("Sum of  two no is "+sum+ "<br>");
+    </script>
+</head>
+<body>  
+</body>
+</html>
+
+****************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var base=parseInt(prompt("Enter the base"));
+        var index=parseInt(prompt("Enter the index"));
+
+        var power=1;
+        for(var i=1; i<=index; i++)
+        {
+            power=power*base;
+        }
+        document.write("Power is "+power+ "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+***************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var no=parseInt(prompt("enter the number "));
+        
+        if(no%2==0)
+        {
+            document.write("Number is even ");
+        }
+        else
+        {
+            document.write("Number is odd ");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+**************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var no=parseInt(prompt("Enter the no "));
+
+        document.write("display the no  "+no+"<br>");
+        var count=1;
+        for(var i=0; i<=no; i++)
+        {
+            no=no/10;
+            count=count+1;
+        }
+        document.write("number of count is "+count+"<br");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+*****************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var no=parseInt(prompt("Enter the number "));
+
+        var fact=1;
+        for(var i=1; i<=no; i++)
+        {
+            fact=fact*i;
+        }
+        document.write("factorial is "+fact+ "<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+*********************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var limit=parseInt(prompt("Enter the limit "));
+
+        var f1=0 , f2=1 , fib=0;
+        document.write("fibonacci series is <br>");
+        document.write(+f1+"<br>");
+        document.write(+f2+"<br>");
+        for(var i=1; i<=limit; i++)
+        {
+            fib=f1+f2;
+            f1=f2;
+            f2=fib;
+            document.write(+fib+"<br>")
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+*******************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var no=parseInt(prompt("Enter the number "));
+
+        document.write("display the number <br>");
+        var first,last;
+        last=no%10;
+        while(no>10)
+        {
+            no=Math.floor(no/10);
+        }
+        first=no;
+        document.write("first is "+first+"<br>"+ "second  is "+last);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+********************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var limit=parseInt(prompt("Enter the limit"));
+
+        document.write("natural no is <br>");
+        for(var i=1; i<=limit; i++)
+        {
+            document.write(+i+"<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+*********************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var no=parseInt(prompt("Enter the number "));
+
+        document.write("Display the number "+no+"<br>");
+        var rev=0,rem;
+        var temp=no;
+        while(no!=0)
+        {
+            rem=no%10;
+            no=Math.floor(no/10);
+            rev=rev*10+rem;
+        }
+        if(temp==rev)
+        {
+            document.write("Number is palindrome");
+        }
+        else
+        {
+            document.write("Number is not palindrome");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var no=parseInt(prompt("Enter the number "));
+
+        document.write("Display the number "+no+"<br>");
+        var flag=true;
+        var sum=0;
+        for(var i=1; i<no; i++)
+        {
+            if(no%i==0)
+            {
+                sum=sum+i;
+            }
+        }
+        if(sum==no)
+        {
+            document.write("Number is perfect ");
+        }
+        else
+        {
+            document.write("Number is not perfect ");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+*******************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var limit=parseInt(prompt("enter the limit "));
+
+        var i,j;
+        for(i=1; i<limit; i++)
+        {
+            var sum=0;
+            for(j=1; j<i; j++)
+            {
+                if(i%j==0)
+                {
+                    sum=sum+j;
+                }
+            }
+            if(sum==i)
+            {
+                document.write(+i+"<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+***********************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var no=parseInt(prompt("Enter the number "));
+
+        document.write("Display the number "+no+"<br>");
+        var flag=true;
+        for(var i=2; i<no; i++)
+        {
+            if(no%i==0)
+            {
+                flag=false;
+                break;
+            }
+        }
+        if(flag)
+        {
+            document.write("Number is prime ");
+        }
+        else
+        {
+            document.write("Number is not prime ");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+**********************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>''
+        var limit=parseInt(prompt("Enter the limit"));
+        var i,j;
+        for(i=2; i<limit; i++)//for count the number 
+        {
+            
+            var flag=true;
+            for(j=2; j<i; j++)//check number is prime or not
+            {
+                if(i%j==0)
+                {
+                    flag=false;
+                    break;
+                }
+            }
+            if(flag)
+            {
+                document.write(j+"<br>");
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+********************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var no=parseInt(prompt("Enter the number "));
+        document.write("Display the number "+no+"<br>");
+        var rem,rev=0;
+        while(no!=0)
+        {
+            rem=no%10;
+            no=Math.floor(no/10);
+            rev=rev*10+rem;
+        }
+        document.write("Reverse number  is "+rev+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+*********************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var limit=parseInt(prompt("Enetr the limit "));
+        document.write("Display the no ");
+        var sum=0;
+        for(var i=1; i<=limit; i++)
+        {
+            document.write(+i+"<br>");
+            sum=sum+i;
+        }
+        document.write("Sum of all natural no is "+sum+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+*******************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var no=parseInt(prompt("Enter the number "));
+
+        document.write("Display the number "+no+"<br>");
+        var rem,sum=0;
+        while(no!=0)
+        {
+            rem=no%10;
+            no=Math.floor(no/10);
+            sum=sum+rem;
+        }
+        document.write("sum of digit number is "+sum+"<br>");
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+*********************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var no=parseInt(prompt("Enter the number "));
+        document.write("Display the number "+no+"<br>");
+
+        var first,last,temp;
+        last=no%10;
+        temp=last;
+        while(no>10)
+        {
+            no=Math.floor(no/10);
+        }
+        first=no;
+        document.write("<br>Before swap");
+        document.write("<br>first is "+first+"<br>"+ "second  is "+last);
+        last=first;
+        first=temp;
+        document.write("<br>after swap");
+        document.write("<br>first is "+first+"<br>"+ "second  is "+last);
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+****************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=parseInt(prompt("Enter the first number "));
+        var b=parseInt(prompt("Enter the second number "));
+        document.write("a is "+a+"<br>");
+        document.write("<br> b is "+b);
+        var temp;
+        temp=a;
+        a=b;
+        b=temp;
+        document.write("a is "+a+"<br>");
+        document.write("<br> b is "+b);
+    </script>>
+</head>
+<body>
+    
+</body>
+</html>
+
+*****************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var a=parseInt(prompt("Enter the 1st number "));
+        var b=parseInt(prompt("Enter the 2nd number "));
+
+        document.write("a is "+a+"<br>");
+        document.write("b is "+b+"<br>");
+
+        a=a+b;
+        b=a-b;
+        a=a-b;
+
+         document.write("a is "+a+"<br>");
+        document.write("b is "+b+"<br>");
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+**********************************************************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var no=parseInt(prompt("Enter the no"));
+
+        document.write("Table of  "+no+ "<br>");
+        for(var i=1; i<=10; i++)
+        {
+            document.write(+no*i+"<br>");
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
+**********************************************************************************************
